@@ -25,6 +25,24 @@ public class AnimalFarm {
 	
 	void animals() {
 
+		while (true) {
+			String answer = JOptionPane.showInputDialog("What animal do you want to hear?");
+			if (answer.equals("cow")) {
+				moo();
+			}
+			else if (answer.equals("duck")) {
+				quack();
+			}
+			else if (answer.equals("dog")) {
+				woof();
+			}
+			else if (answer.equals("cat")) {
+				meow();
+			}
+			else {
+				llamaScream();
+			}
+		}
 		/* 1. Ask the user which animal they want, then see and hear 
 		 *    the animal they chose using one of the methods below.
 		*/			 
